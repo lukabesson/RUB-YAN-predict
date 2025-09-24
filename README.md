@@ -1,6 +1,7 @@
 # RUB-YAN-predict
 A project aimed at analyzing and predicting the exchange rate of the RUB/YAN currency pair using a combination of SARIMAX, HMM, and LSTM models.
 
+
 ### Analysis and Forecasting
 
 For data analysis and forecasting, we leveraged the following Python libraries: **NumPy**, **Pandas**, **scikit-learn**, **Matplotlib**, **Statsmodels**, **TensorFlow**, and **hmmlearn**.
@@ -11,16 +12,17 @@ Historical data analysis—conducted in spring 2025—revealed that by mid-June 
 - **MSE**: 0.0326  
 - **MAE**: 0.1412  
 - **MAPE**: 1.20%  
-- **R²**: 0.726  
+- **R² (Coefficient of Determination)**: 0.726  
 
-These metrics indicate strong predictive performance:  
-- The low **MAE** suggests minimal average absolute error, confirming high accuracy for short-term forecasts.  
-- The low **MSE** implies the absence of significant outliers, reflecting robustness in longer-term predictions.  
-- The **MAPE** of just over 1% demonstrates low relative (percentage) error, further validating the model's reliability.
+**Interpretation of metrics:**  
+- The low **Mean Absolute Error (MAE)** indicates that, on average, the model’s predictions deviate from the true values by only about **0.14 RUB**, which is excellent for short-term forecasting.  
+- The low **Mean Squared Error (MSE)** suggests that large errors (outliers) are rare, confirming the model’s stability over longer horizons.  
+- The **Mean Absolute Percentage Error (MAPE)** of **1.20%** reflects very low relative error—meaning predictions are typically within ~1% of actual values.  
+- The **R² score of 0.726** means that approximately **72.6% of the variance** in the exchange rate is explained by the model. In other words, the model captures the majority of the underlying patterns in the data, which is considered strong performance for a real-world financial time series.
 
 #### Ensemble Composition:
 - **SARIMAX**: 40%  
 - **Hidden Markov Model (HMM)**: 30%  
 - **LSTM**: 30%  
 
-The balanced combination of statistical, probabilistic, and deep learning approaches enables the ensemble to capture diverse patterns in the time series, resulting in accurate and stable forecasts.
+This hybrid ensemble combines the strengths of classical statistical modeling (SARIMAX), probabilistic state-based forecasting (HMM), and deep learning (LSTM). The result is a robust, adaptive system capable of capturing linear trends, regime shifts, and complex nonlinear dynamics—leading to accurate and reliable exchange rate predictions.
