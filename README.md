@@ -26,3 +26,5 @@ Historical data analysis—conducted in spring 2025—revealed that by mid-June 
 - **LSTM**: 30%  
 
 This hybrid ensemble combines the strengths of classical statistical modeling (SARIMAX), probabilistic state-based forecasting (HMM), and deep learning (LSTM). The result is a robust, adaptive system capable of capturing linear trends, regime shifts, and complex nonlinear dynamics—leading to accurate and reliable exchange rate predictions.
+
+<img width="1321" height="1011" alt="image" src="https://github.com/user-attachments/assets/d9b6d971-6b49-4d60-860d-6ceb0bd292a2" />
